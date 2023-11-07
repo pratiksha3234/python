@@ -1,0 +1,33 @@
+import random
+
+def get_choice():
+    player_choice=input("enter your choice among stone,paper or scissor:")
+    option=["stone","paper","scissor"]
+    computer_choice=random.choice(option)
+    choices={"player":player_choice,"computer":computer_choice}
+    return choices
+
+
+def check(player,computer):
+    print(f"your choice is {player} and computer choice is {computer}")
+    if player == computer:
+        return("its a tie!")
+    elif player == "stone":
+        if computer == "scissor":
+            return("you win!")
+        else:
+            return("you lose")
+    elif player == "paper":
+        if computer == "stone":
+            return("you win!")
+        else:
+            return("you lose")
+    elif player == "scissor":
+        if computer == "paper":
+            return("you win!")
+        else:
+            return("you lose")
+
+choices = get_choice()
+result = check(choices["player"],choices["computer"])
+print(result)
