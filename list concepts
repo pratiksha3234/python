@@ -29,6 +29,8 @@ my_list.append(6)
 my_list.extend([7, 8])
 my_list.insert(2, 10)
 my_list.remove(3)
+del my_list[0]
+print("reverse of list",my_list[::-1])
 popped_element = my_list.pop()
 print("Updated list:", my_list)
 print("Popped element:", popped_element)
@@ -51,3 +53,7 @@ else:
 # 11. List Comprehension
 squared_numbers = [x**2 for x in my_list]
 print("Squared numbers:", squared_numbers)
+
+#display last five elements of list
+list=[1,2,3,4,5,6,7,8,9]
+print(list[-1:-6:-1])
