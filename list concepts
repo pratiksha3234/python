@@ -57,3 +57,7 @@ print("Squared numbers:", squared_numbers)
 #display last five elements of list
 list=[1,2,3,4,5,6,7,8,9]
 print(list[-1:-6:-1])
+
+# descending order of list
+list.sort()# this gives ascending order
+list.sort(reverse=True)# this gives descending order
