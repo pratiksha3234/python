@@ -8,3 +8,9 @@
         print("vowel")
     else:
         print("not vowel")
+
+#alternate method using short hand if else 
+
+vowel=["a","e","i","o","u"]
+n=input("enter a letter: ")
+print("its vowel") if n in vowel else print("not a vowel")
