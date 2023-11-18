@@ -1,0 +1,10 @@
+     vowel=["a","e","i","o","u"]
+    n=input("enter a letter: ")
+    count=0
+    for i in vowel:
+        if i==n:
+          count+=1
+    if count>0:
+        print("vowel")
+    else:
+        print("not vowel")
