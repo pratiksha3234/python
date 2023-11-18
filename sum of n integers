@@ -1,0 +1,8 @@
+n=int(input("enter range for calculating sum"))
+if n>0:
+    sum=0
+    for i in range(n+1):
+        sum=sum+i
+    print(f"sum of {n} integers is {sum}")
+else:
+    print("number should be greater than 0")
