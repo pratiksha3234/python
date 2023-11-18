@@ -1,0 +1,52 @@
+# 1. Tuple Creation
+my_tuple = (1, 2, 3, 4, 5)
+
+# 2. Tuple Length
+length_of_tuple = len(my_tuple)
+print("Length of the tuple:", length_of_tuple)
+
+# 3. Accessing Elements in a Tuple
+first_element = my_tuple[0]
+last_element = my_tuple[-1]
+print("First element:", first_element)
+print("Last element:", last_element)
+
+# 4. Tuple Slicing
+subset_of_tuple = my_tuple[1:4]
+print("Subset of the tuple:", subset_of_tuple)
+
+# 5. Concatenation
+another_tuple = (6, 7, 8)
+combined_tuple = my_tuple + another_tuple
+print("Combined tuple:", combined_tuple)
+
+# 6. Tuple Repetition
+repeated_tuple = my_tuple * 2
+print("Tuple repetition:", repeated_tuple)
+
+# 7. Tuple Methods
+index_of_element = my_tuple.index(3)
+count_of_element = my_tuple.count(2)
+print("Index of element 3:", index_of_element)
+print("Count of element 2:", count_of_element)
+
+# 8. Tuple Unpacking
+a, b, c, *rest = my_tuple
+print("Unpacked values:", a, b, c)
+print("Remaining values:", rest)
+
+# 9. Tuple Immutability
+# Uncommenting the next line will raise an error since tuples are immutable.
+# my_tuple[0] = 10
+
+# 10. Tuple Membership
+element_to_find = 5
+if element_to_find in my_tuple:
+    print(element_to_find, "found in the tuple")
+else:
+    print(element_to_find, "not found in the tuple")
+
+# 11. Tuple Iteration
+print("Iterating through the tuple:")
+for element in my_tuple:
+    print(element)
