@@ -1,0 +1,16 @@
+#without using temp
+
+a,b=map(int,input("enter two number to be swapped").split(","))
+print(a,b,":before swapping")
+a,b=b,a
+print(a,b,":after swapping")
+
+
+#using temp variable
+a,b=map(int,input("enter two number to be swapped").split(","))
+print(a,b,":before swapping")
+temp=a
+a=b
+b=temp
+print(a,b,":after swapping")
+
