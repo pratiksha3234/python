@@ -1,0 +1,8 @@
+# ask user 3 times to check whether the given number is palindrome or not
+for i in range(3):    
+    n=input("enter number: ")
+    rev=n[::-1]
+    if n==rev:
+        print(f"{n} is palindrome")
+    else:
+        print("not a palindrome")
