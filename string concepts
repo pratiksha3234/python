@@ -1,0 +1,58 @@
+# 1. Basic String Creation
+word = "Hello, World!"
+
+# 2. String Length
+length_of_string = len(word)
+print("Length of the string:", length_of_string)
+
+# 3. Accessing Characters in a String
+first_char = word[0]
+last_char = word[-1]
+print("First character:", first_char)
+print("Last character:", last_char)
+
+# 4. String Slicing
+substring = word[7:12]
+print("Substring:", substring)
+
+# 5. Concatenation
+new_string = word + " Welcome!"
+print("Concatenated string:", new_string)
+
+# 6. String Repetition
+repeated_string = word * 3
+print("String repetition:", repeated_string)
+
+# 7. String Methods
+uppercase_string = word.upper()
+lowercase_string = word.lower()
+capitalized_string = word.capitalize()
+print("Uppercase:", uppercase_string)
+print("Lowercase:", lowercase_string)
+print("Capitalized:", capitalized_string)
+
+# 8. Finding Substrings
+find = "World"
+if find in word:
+    print(find, "found in the string")
+else:
+    print(find, "not found in the string")
+
+# 9. String Formatting
+name = "Alice"
+age = 30
+formatted_string = "My name is {} and I am {} years old.".format(name, age)
+print("Formatted string:", formatted_string)
+
+# 10. String Splitting
+sentence = "This is a sample sentence."
+words = sentence.split()
+print("Words in the sentence:", words)
+
+# 11. String Stripping
+whitespace_string = "   This is a string with leading and trailing spaces.   "
+stripped_string = whitespace_string.strip()
+print("Original string:", whitespace_string)
+print("Stripped string:", stripped_string)
+
+
