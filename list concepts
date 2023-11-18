@@ -1,0 +1,53 @@
+# 1. List Creation
+my_list = [1, 2, 3, 4, 5]
+
+# 2. List Length
+length_of_list = len(my_list)
+print("Length of the list:", length_of_list)
+
+# 3. Accessing Elements in a List
+first_element = my_list[0]
+last_element = my_list[-1]
+print("First element:", first_element)
+print("Last element:", last_element)
+
+# 4. List Slicing
+subset_of_list = my_list[1:4]
+print("Subset of the list:", subset_of_list)
+
+# 5. List Concatenation
+another_list = [6, 7, 8]
+combined_list = my_list + another_list
+print("Combined list:", combined_list)
+
+# 6. List Repetition
+repeated_list = my_list * 2
+print("List repetition:", repeated_list)
+
+# 7. List Methods
+my_list.append(6)
+my_list.extend([7, 8])
+my_list.insert(2, 10)
+my_list.remove(3)
+popped_element = my_list.pop()
+print("Updated list:", my_list)
+print("Popped element:", popped_element)
+
+# 8. List Sorting
+my_list.sort()
+print("Sorted list:", my_list)
+
+# 9. List Reverse
+my_list.reverse()
+print("Reversed list:", my_list)
+
+# 10. List Membership
+element_to_find = 5
+if element_to_find in my_list:
+    print(element_to_find, "found in the list")
+else:
+    print(element_to_find, "not found in the list")
+
+# 11. List Comprehension
+squared_numbers = [x**2 for x in my_list]
+print("Squared numbers:", squared_numbers)
