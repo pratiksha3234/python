@@ -1,15 +1,7 @@
-import random
+
 import calendar
 import datetime
 import time
-li=[1,2,3]
-print(sum(li))
-print(len(li))
-a=random.randint(1,10)
-li.append(a)
-print(li)
-sorted(li)
-print(li)
 m=6
 y=2004
 print(calendar.month(y,m))
