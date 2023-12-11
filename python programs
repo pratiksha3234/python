@@ -1,0 +1,32 @@
+# dictionary
+def add_key(dict, key, value):
+    dict[key] = value
+    print("after add: ",dict)
+
+def remove_key(dict, key):
+    if key in dict:
+        del dict[key]
+        print("after deletion:",dict)
+    else:
+        print(f"The key '{key}' does not exist.")
+
+def sort_keys(dict):
+    sorted_keys = sorted(dict)
+    return {k: dict[k] for k in sorted_keys}
+    
+
+def keys_with_multiple_inputs(dict):
+    d2={}
+    for key in dict.keys():
+        if len(dict[key]) > 1 and isinstance(dict[key], list):
+          d2[key]=dict[key]
+    print("keys with multiple inputs: ",d2)       
+
+
+d={1:"d",2:"f",3:["ss","rr"],6:["fff","ll"]}
+add_key(d,9,"rr")
+remove_key(d, 2)
+sort_keys(d)
+keys_with_multiple_inputs(d)
+
+
